@@ -1,12 +1,12 @@
-# Name TBD
+# PoMAero
 - Team
 	- Niklas - @NiklasEi
 	- Tobias - @cryptobias
 	- Albert - @alikhuber
 	- Gauthier - @6ry0u
--  Tech Stack Chosen: Evan.network
+-  Tech Stack chosen: [Evan.network](https://evan.network/)
 - Context/Industry: aviation supply chain, especially after sales business
-- Customers/Stakeholders
+- Customers/stakeholders
 	- Airlines
 	- Maintenance and Repair Organization (MRO)
 	- Spare parts suppliers/manufacturers
@@ -17,13 +17,26 @@
 		- E.g. low cost airline keeping operating an aircraft past the maximum legal replacement date of a part
 	- High safety risk related to bogus parts
 	- High safety risk related to aircraft operation out of specified/legal conditions
-		- E.g. airline/airport allowing take off beyond maximum allowed take weight (to transport more cargo and save money although illegal)
+		- E.g. airline/airport allowing take off beyond maximum allowed take off weight (to transport more cargo and save money although illegal)
 	- Manual and paper based process
 - Benefits
 	- Safer aircraft operations
-	- Streamlined and better scheduled mainteance process: perform maintenance operations neither too early nor too late but at the right time
+	- Streamlined and better scheduled maintenance process: perform maintenance operations neither too early nor too late but at the right time
 		- costs savings + process efficiency
-		- protection against penalties from authority
-		- protection against reputation damages
-	- Automation possibilites if combined with IoT devices
-		- Digital Twin ordering its "self-replacement" on behalf of the Airline
+		- avoid fines
+		- prevent reputation and brand damage
+	- Automation possibilities if combined with IoT devices: digital twin ordering its "self-replacement" on behalf of the Airline
+- Solution: front-end client connecting to evan.network and allowing customers to perform their specific jobs
+	- Airline
+		- Check parts installed and their properties (e.g next planned maintenance operation date)
+		- Transfer ownership of aircraft to another Airline
+		- Check history of flights
+		- Request/schedule maintenance operation
+	- MRO
+		- Perform maintenance task
+		- Order spare part
+	- Supplier
+		- Deliver spare part
+	- Authority
+		- View history of maintenance operations
+		- View hisotry of aircraft flights
