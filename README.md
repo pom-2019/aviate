@@ -1,0 +1,29 @@
+# Name TBD
+- Team
+	- Niklas - @NiklasEi
+	- Tobias - @cryptobias
+	- Albert - @alikhuber
+	- Gauthier - @6ry0u
+-  Tech Stack Chosen: Evan.network
+- Context/Industry: aviation supply chain, especially after sales business
+- Customers/Stakeholders
+	- Airlines
+	- Maintenance and Repair Organization (MRO)
+	- Spare parts suppliers/manufacturers
+	- Aviation Authorities
+- Problems/pain points to solve
+	- Long life cycles (50 years before aircraft retirement): how to track  and trust the operations history and all the ownership transfers over such a long time? How to audit it?
+	- High safety risk related to wrong or late maintenance operations
+		- E.g. low cost airline keeping operating an aircraft past the maximum legal replacement date of a part
+	- High safety risk related to bogus parts
+	- High safety risk related to aircraft operation out of specified/legal conditions
+		- E.g. airline/airport allowing take off beyond maximum allowed take weight (to transport more cargo and save money although illegal)
+	- Manual and paper based process
+- Benefits
+	- Safer aircraft operations
+	- Streamlined and better scheduled mainteance process: perform maintenance operations neither too early nor too late but at the right time
+		- costs savings + process efficiency
+		- protection against penalties from authority
+		- protection against reputation damages
+	- Automation possibilites if combined with IoT devices
+		- Digital Twin ordering its "self-replacement" on behalf of the Airline
