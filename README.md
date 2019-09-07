@@ -40,3 +40,33 @@
 	- Authority
 		- View history of maintenance operations
 		- View hisotry of aircraft flights
+
+## Data model
+Aircraft = AC  
+Maintenance & Repair Organization = MRO  
+## Stored (ipfs + references "on chain")
+|Digital Twin|Property|Type|C|R|U|D|
+|--|--|--|--|--|--|--|
+|AC|msn|int|AC manufacturer|public||
+|AC|parts|list(text)|owner|AC owner|AC owner, authorizedMros||
+|AC|cat|text|AC manufacturer|public|||
+||||||||
+|part|id|int|
+|part|msn|int||AC owner
+|part|certificate||AC owner, allowedMros|AC owner, allowedMros
+|part|allowedMros|list(str)|AC owner|AC owner|AC owner|
+|part|lastMaintenanceDate|int|allowedMros|AC owner, allowedMros|AC owner, allowedMros
+|part|maxAgeAllowed|int|AC manufacturer|AC owner, allowedMros|AC owner, allowedMros
+
+## Computed at runtime in the Dapp front end
+|Digital Twin|Property|Type|C|R|U|D|
+|--|--|--|--|--|--|--|
+|part|maintenanceDatePast|bool|||internal
+|AC|takeOffAllowed|bool|||internal||
+
+## Requirements/Features
+- AC can be transferred from manufacturer to airlines and between Airlines
+- AC owner can update parts list
+- `takeOffAllowed` gets updated automatically after comparing `maxAge` against the difference of `lastMaintenanceDate` and `today`
+- Only allowed MROs or the owner of the AC the part is installed on can update the `lastMaintenanceDate`
+- Only allowed MROs or the owner of the AC the part is installed on can update the the corresponding `parts` list of the AC object
