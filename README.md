@@ -1,4 +1,4 @@
-# PoMAero
+# Daedalus
 - Team
 	- Niklas - @NiklasEi
 	- Tobias - @cryptobias
